@@ -1,0 +1,84 @@
+# ==========================================
+# API Keys and Secrets (CRITICAL)
+# ==========================================
+.env
+.env.*
+secrets.json
+credentials.json
+*.pem
+
+# ==========================================
+# Local Vector Databases & Caches
+# ==========================================
+# ChromaDB
+chroma_db/
+.chroma/
+
+# FAISS
+*.faiss
+*.pkl
+faiss_index/
+
+# Other Local DBs (SQLite, DuckDB, LanceDB)
+*.sqlite
+*.sqlite3
+*.db
+*.duckdb
+lancedb/
+
+# Embedding caches or HuggingFace local caches
+.cache/
+huggingface/
+.huggingface/
+
+# ==========================================
+# RAG Data & Documents
+# ==========================================
+# Ignore large datasets or private documents 
+# (Modify these paths based on your project structure)
+data/raw/
+data/private/
+*.pdf
+*.docx
+*.txt
+*.csv
+# If you want to track a sample data file, force add it later using: git add -f data/sample.txt
+
+# ==========================================
+# Python & Virtual Environments
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environments
+venv/
+.venv/
+env/
+.env_venv/
+Pipfile.lock
+poetry.lock
+
+# ==========================================
+# Jupyter Notebooks & Experimentation
+# ==========================================
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+jupyter_notebook_config.py
+
+# ==========================================
+# Logging & Debugging
+# ==========================================
+*.log
+logs/
+langsmith_cache/
+
+# ==========================================
+# IDEs and OS Specific
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
